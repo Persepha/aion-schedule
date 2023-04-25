@@ -1,0 +1,16 @@
+---
+export interface Props {
+  linkTo: string;
+  title: string;
+}
+
+const { linkTo, title } = Astro.props;
+---
+
+<a
+  class="flex h-10 items-center justify-center gap-2 rounded-lg border-transparent bg-black/50 px-2 py-1 shadow-sm transition duration-300 ease-in-out hover:scale-105 hover:bg-black/90 supports-[backdrop-filter]:backdrop-blur-xl"
+  href={linkTo}
+>
+  <slot />
+  <span class="text-white">{title}</span>
+</a>
