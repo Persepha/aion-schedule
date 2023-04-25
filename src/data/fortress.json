@@ -1,0 +1,66 @@
+[
+    {
+        "location": "Lower abyss",
+        "name": "Siel's Western Fortress",
+        "day": ["Wednesday", "Sunday"],
+        "time_start": "7:00 PM",
+        "time_end": "7:30 PM"
+    },
+    {
+        "location": "Lower abyss",
+        "name": "Siel's Eastern Fortress",
+        "day": ["Wednesday", "Sunday"],
+        "time_start": "7:00 PM",
+        "time_end": "7:30 PM"
+    },
+    {
+        "location": "Lower abyss",
+        "name": "Sulphur Fortress",
+        "day": ["Wednesday", "Sunday"],
+        "time_start": "7:00 PM",
+        "time_end": "7:30 PM"
+    },
+    {
+        "location": "Core abyss",
+        "name": "Divine Fortress",
+        "day": ["Saturday"],
+        "time_start": "10:00 PM",
+        "time_end": "22:50 PM"
+    },
+    {
+        "location": "Upper abyss",
+        "name": "Asteria Fortress",
+        "day": ["Saturday"],
+        "time_start": "7:00 PM",
+        "time_end": "7:30 PM"
+    },
+    {
+        "location": "Upper abyss",
+        "name": "Roah Fortress",
+        "day": ["Saturday"],
+        "time_start": "7:00 PM",
+        "time_end": "7:30 PM"
+    },
+    {
+        "location": "Upper abyss",
+        "name": "Krotan Fortress",
+        "day": ["Wednesday", "Sunday"],
+        "time_start": "10:00 PM",
+        "time_end": "10:30 PM"
+
+    },
+    {
+        "location": "Upper abyss",
+        "name": "Kysis Fortress",
+        "day": ["Wednesday", "Sunday"],
+        "time_start": "10:00 PM",
+        "time_end": "10:30 PM"
+    },
+    {
+        "location": "Upper abyss",
+        "name": "Miren Fortress",
+        "day": ["Wednesday", "Sunday"],
+        "time_start": "10:00 PM",
+        "time_end": "10:30 PM"
+    }
+]
