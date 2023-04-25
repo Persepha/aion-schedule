@@ -1,0 +1,13 @@
+---
+import Wrapper from "../components/Wrapper.astro";
+import Layout from "../layouts/Layout.astro";
+
+import riftsSchedule from "../data/rifts.json";
+import { RiftSchedule } from "../components/React/RiftSchedule";
+---
+
+<Layout title="Aion schedule | Battlefield">
+  <Wrapper>
+    <RiftSchedule activities={riftsSchedule} client:load />
+  </Wrapper>
+</Layout>

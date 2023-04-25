@@ -1,0 +1,14 @@
+[
+    {
+        "region": "to Beluslan",
+        "day": ["Thursday", "Friday", "Saturday", "Sunday"],
+        "time_start": "3:00 PM",
+        "time_end": "7:00 PM"
+    },
+    {
+        "region": "to Heiron",
+        "day": ["Thursday", "Friday", "Saturday", "Sunday"],
+        "time_start": "5:00 PM",
+        "time_end": "9:00 PM"
+    }
+]
