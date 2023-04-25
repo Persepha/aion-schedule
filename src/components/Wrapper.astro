@@ -1,0 +1,15 @@
+---
+import Navigation from "./Navigation.astro";
+import { ServerTime } from "./React/ServerTime";
+---
+
+<main
+  class="min-h-screen bg-black/60 bg-[url('/bg.png')] bg-cover bg-center bg-no-repeat bg-blend-darken"
+>
+  <header class="flex items-center justify-center p-3">
+    <img src="/aion_logo.png" width="350" height="120" alt="aion logo" />
+  </header>
+  <ServerTime client:load />
+  <Navigation />
+  <slot />
+</main>
