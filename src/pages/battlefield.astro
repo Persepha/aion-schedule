@@ -1,0 +1,13 @@
+---
+import Wrapper from "../components/Wrapper.astro";
+import Layout from "../layouts/Layout.astro";
+
+import battlefieldSchedule from "../data/battlefield.json";
+import { BattlefieldSchedule } from "../components/React/BattlefieldSchedule";
+---
+
+<Layout title="Aion schedule | Battlefield">
+  <Wrapper>
+    <BattlefieldSchedule activities={battlefieldSchedule} client:load />
+  </Wrapper>
+</Layout>
