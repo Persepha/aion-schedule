@@ -4,18 +4,24 @@ import NavLink from "./UI/NavLink.astro";
 
 <nav class="flex flex-wrap items-center justify-center gap-2">
   <NavLink linkTo="/current-activities/" title="Current activities">
-    <img src="/images/flame.svg" alt="rift logo" />
+    <img src={`${import.meta.env.BASE_URL}/images/flame.svg`} alt="rift logo" />
   </NavLink>
 
   <NavLink linkTo="/" title="Fortress">
-    <img src="/images/fortress.png" alt="rift logo" />
+    <img
+      src={`${import.meta.env.BASE_URL}/images/fortress.png`}
+      alt="rift logo"
+    />
   </NavLink>
 
   <NavLink linkTo="/rifts/" title="Rifts">
-    <img src="/images/rift.png" alt="rift logo" />
+    <img src={`${import.meta.env.BASE_URL}/images/rift.png`} alt="rift logo" />
   </NavLink>
 
   <NavLink linkTo="/battlefield/" title="Battlefield">
-    <img src="/images/battlefield_active.png" alt="battlefield logo" />
+    <img
+      src={`${import.meta.env.BASE_URL}/images/battlefield_active.png`}
+      alt="battlefield logo"
+    />
   </NavLink>
 </nav>

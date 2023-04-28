@@ -7,7 +7,12 @@ import { ServerTime } from "./React/ServerTime";
   class="min-h-screen bg-black/60 bg-[url('/bg.png')] bg-cover bg-center bg-no-repeat bg-blend-darken"
 >
   <header class="flex items-center justify-center p-3">
-    <img src="/aion_logo.png" width="350" height="120" alt="aion logo" />
+    <img
+      src={`${import.meta.env.BASE_URL}/aion_logo.png`}
+      width="350"
+      height="120"
+      alt="aion logo"
+    />
   </header>
   <ServerTime client:load />
   <Navigation />
