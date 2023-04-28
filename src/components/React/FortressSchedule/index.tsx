@@ -1,20 +1,24 @@
 import { FC, useEffect, useState } from "react";
 
-import moment from "moment";
-
 import type { FortressScheduleProps } from "./FortressSchedule.props";
 import {
   isActivityToday,
   isTimeBetween,
 } from "../../../utils/isCurrentActivities";
-
+import type { FortressScheduleActivity } from "../../../types";
 
 export const FortressSchedule: FC<FortressScheduleProps> = ({ activities }) => {
-  const [currentTime, setCurrentTime] = useState<string>("");
+  const [currentFortress, setCurrentFortress] = useState<
+    FortressScheduleActivity[]
+  >([]);
+
   useEffect(() => {
+    setCurrentFortress(activities);
+
     const interval = setInterval(() => {
-      setCurrentTime(moment().format("LT"));
+      setCurrentFortress(activities);
     }, 60000);
+
     return () => {
       clearInterval(interval);
     };
@@ -43,7 +47,7 @@ export const FortressSchedule: FC<FortressScheduleProps> = ({ activities }) => {
             </tr>
           </thead>
           <tbody>
-            {activities.map((activity) => (
+            {currentFortress.map((activity) => (
               <tr
                 key={activity.name}
                 className="bg-black/50 text-base text-white supports-[backdrop-filter]:backdrop-blur-xl"
@@ -70,11 +74,16 @@ export const FortressSchedule: FC<FortressScheduleProps> = ({ activities }) => {
                   {isTimeBetween(activity.time_start, activity.time_end) &&
                   isActivityToday(activity.day) ? (
                     <img
-                      src={`${import.meta.env.BASE_URL}/images/fortress_active.png`}
+                      src={`${
+                        import.meta.env.BASE_URL
+                      }/images/fortress_active.png`}
                       alt="activity_status"
                     />
                   ) : (
-                    <img src={`${import.meta.env.BASE_URL}/images/fortress.png`} alt="activity_status" />
+                    <img
+                      src={`${import.meta.env.BASE_URL}/images/fortress.png`}
+                      alt="activity_status"
+                    />
                   )}
                 </td>
               </tr>

@@ -1,20 +1,23 @@
 import { FC, useEffect, useState } from "react";
 
-import moment from "moment";
-
 import {
   isActivityToday,
   isTimeBetween,
 } from "../../../utils/isCurrentActivities";
 
 import type { RiftScheduleProps } from "./RiftSchedule.props";
+import type { RiftScheduleActivity } from "../../../types";
 
 export const RiftSchedule: FC<RiftScheduleProps> = ({ activities }) => {
-  const [currentTime, setCurrentTime] = useState<string>("");
+  const [currentRifts, setCurrentRifts] = useState<RiftScheduleActivity[]>([]);
+
   useEffect(() => {
+    setCurrentRifts(activities);
+
     const interval = setInterval(() => {
-      setCurrentTime(moment().format("LT"));
+      setCurrentRifts(activities);
     }, 60000);
+
     return () => {
       clearInterval(interval);
     };
@@ -40,7 +43,7 @@ export const RiftSchedule: FC<RiftScheduleProps> = ({ activities }) => {
             </tr>
           </thead>
           <tbody>
-            {activities.map((activity) => (
+            {currentRifts.map((activity) => (
               <tr
                 key={activity.region}
                 className="bg-black/50 text-base text-white supports-[backdrop-filter]:backdrop-blur-xl"
@@ -63,7 +66,10 @@ export const RiftSchedule: FC<RiftScheduleProps> = ({ activities }) => {
                 <td className="px-6 py-4">
                   {isTimeBetween(activity.time_start, activity.time_end) &&
                   isActivityToday(activity.day) ? (
-                    <img src={`${import.meta.env.BASE_URL}/images/rift.png`}  alt="activity_status" />
+                    <img
+                      src={`${import.meta.env.BASE_URL}/images/rift.png`}
+                      alt="activity_status"
+                    />
                   ) : (
                     <img
                       className="grayscale"

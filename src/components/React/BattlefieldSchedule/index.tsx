@@ -1,21 +1,24 @@
 import { FC, useEffect, useState } from "react";
 
-import moment from "moment";
-
-import {
-  isTimeBetween,
-} from "../../../utils/isCurrentActivities";
+import { isTimeBetween } from "../../../utils/isCurrentActivities";
 
 import type { BattlefieldScheduleProps } from "./BattlefieldSchedule.props";
+import type { ScheduleBattlefieldActivity } from "../../../types";
 
 export const BattlefieldSchedule: FC<BattlefieldScheduleProps> = ({
   activities,
 }) => {
-  const [currentTime, setCurrentTime] = useState<string>("");
+  const [currentBattleFields, setCurrentBattleFields] = useState<
+    ScheduleBattlefieldActivity[]
+  >([]);
+
   useEffect(() => {
+    setCurrentBattleFields(activities);
+
     const interval = setInterval(() => {
-      setCurrentTime(moment().format("LT"));
+      setCurrentBattleFields(activities);
     }, 60000);
+
     return () => {
       clearInterval(interval);
     };
@@ -44,7 +47,7 @@ export const BattlefieldSchedule: FC<BattlefieldScheduleProps> = ({
             </tr>
           </thead>
           <tbody>
-            {activities.map((activity) => (
+            {currentBattleFields.map((activity) => (
               <tr
                 key={activity.name}
                 className="bg-black/50 text-base text-white supports-[backdrop-filter]:backdrop-blur-xl"
@@ -75,11 +78,16 @@ export const BattlefieldSchedule: FC<BattlefieldScheduleProps> = ({
                     isTimeBetween(time.time_start, time.time_end)
                   ) ? (
                     <img
-                      src={`${import.meta.env.BASE_URL}/images/battlefield_active.png`}
+                      src={`${
+                        import.meta.env.BASE_URL
+                      }/images/battlefield_active.png`}
                       alt="battlefield status"
                     />
                   ) : (
-                    <img src={`${import.meta.env.BASE_URL}/images/battlefield.png`} alt="activity_status" />
+                    <img
+                      src={`${import.meta.env.BASE_URL}/images/battlefield.png`}
+                      alt="activity_status"
+                    />
                   )}
                 </td>
               </tr>
