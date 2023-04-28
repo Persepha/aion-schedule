@@ -79,7 +79,7 @@ export const BattlefieldSchedule: FC<BattlefieldScheduleProps> = ({
                       alt="battlefield status"
                     />
                   ) : (
-                    <img src={`${import.meta.env.BASE_URL}/images/battlefield.png" alt="activity_status`}/>
+                    <img src={`${import.meta.env.BASE_URL}/images/battlefield.png`} alt="activity_status" />
                   )}
                 </td>
               </tr>
