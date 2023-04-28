@@ -63,11 +63,11 @@ export const RiftSchedule: FC<RiftScheduleProps> = ({ activities }) => {
                 <td className="px-6 py-4">
                   {isTimeBetween(activity.time_start, activity.time_end) &&
                   isActivityToday(activity.day) ? (
-                    <img src="/images/rift.png" alt="activity_status" />
+                    <img src={`${import.meta.env.BASE_URL}/images/rift.png`}  alt="activity_status" />
                   ) : (
                     <img
                       className="grayscale"
-                      src="/images/rift.png"
+                      src={`${import.meta.env.BASE_URL}/images/rift.png`}
                       alt="activity_status"
                     />
                   )}

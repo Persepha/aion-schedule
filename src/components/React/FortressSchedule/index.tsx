@@ -70,11 +70,11 @@ export const FortressSchedule: FC<FortressScheduleProps> = ({ activities }) => {
                   {isTimeBetween(activity.time_start, activity.time_end) &&
                   isActivityToday(activity.day) ? (
                     <img
-                      src="/images/fortress_active.png"
+                      src={`${import.meta.env.BASE_URL}/images/fortress_active.png`}
                       alt="activity_status"
                     />
                   ) : (
-                    <img src="/images/fortress.png" alt="activity_status" />
+                    <img src={`${import.meta.env.BASE_URL}/images/fortress.png`} alt="activity_status" />
                   )}
                 </td>
               </tr>

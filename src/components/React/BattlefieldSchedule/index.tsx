@@ -75,11 +75,11 @@ export const BattlefieldSchedule: FC<BattlefieldScheduleProps> = ({
                     isTimeBetween(time.time_start, time.time_end)
                   ) ? (
                     <img
-                      src="/images/battlefield_active.png"
+                      src={`${import.meta.env.BASE_URL}/images/battlefield_active.png`}
                       alt="battlefield status"
                     />
                   ) : (
-                    <img src="/images/battlefield.png" alt="activity_status" />
+                    <img src={`${import.meta.env.BASE_URL}/images/battlefield.png" alt="activity_status`}/>
                   )}
                 </td>
               </tr>
