@@ -9,7 +9,6 @@ import {
 
 import type { RiftScheduleProps } from "./RiftSchedule.props";
 
-
 export const RiftSchedule: FC<RiftScheduleProps> = ({ activities }) => {
   const [currentTime, setCurrentTime] = useState<string>("");
   useEffect(() => {

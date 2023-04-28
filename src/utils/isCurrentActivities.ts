@@ -9,7 +9,7 @@ export const isTimeBetween = (start: string, end: string) => {
 
     const startTime = moment(start, format);
     const endTime = moment(end, format);
-    const currentTime = moment(moment().format(format), format) ;
+    const currentTime = moment(moment().utc().add(2, "h").format(format), format) ;
 
     const midnight = moment('12:00 AM', format);
 
