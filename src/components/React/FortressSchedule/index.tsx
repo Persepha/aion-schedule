@@ -30,19 +30,19 @@ export const FortressSchedule: FC<FortressScheduleProps> = ({ activities }) => {
           <thead className="bg-black/90 text-sm dark:text-gray-400">
             <tr>
               <th scope="col" className="px-6 py-3">
-                Name
+                Крепость
               </th>
               <th scope="col" className="px-6 py-3">
-                Location
+                Локация
               </th>
               <th scope="col" className="px-6 py-3">
-                Weekday
+                День недели
               </th>
               <th scope="col" className="px-6 py-3">
-                Time
+                Время
               </th>
               <th scope="col" className="px-6 py-3">
-                Status
+                Статус
               </th>
             </tr>
           </thead>

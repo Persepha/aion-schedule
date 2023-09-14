@@ -1,7 +1,7 @@
 import moment from "moment";
 
 export const isTimeBetween = (start: string, end: string) => {
-    if (start === "Any time" || end === "Any time") {
+    if (start === "В любое время" || end === "В любое время") {
       return true;
     }
 

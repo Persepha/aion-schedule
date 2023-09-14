@@ -64,7 +64,7 @@ export const CurrentActivities: FC<CurrentActivitiesProps> = ({
         {currentFortress.length > 0 ? (
           <article>
             <header className="bg-gradient-to-tr from-[#ec6f59] to-[#fad15c] bg-clip-text py-2 text-lg font-extrabold text-transparent">
-              Fortress Battle:
+              Осады:
             </header>
             <ol className="relative border-l  border-gray-700 p-2">
               {currentFortress.map((fortress, index) => (
@@ -88,7 +88,7 @@ export const CurrentActivities: FC<CurrentActivitiesProps> = ({
         {currentRifts.length > 0 ? (
           <article>
             <header className="bg-gradient-to-tr from-[#ec6f59] to-[#fad15c] bg-clip-text py-2 text-lg font-extrabold text-transparent">
-              Rifts:
+              Разломы:
             </header>
             <ol className="relative border-l  border-gray-700 p-2">
               {currentRifts.map((rift, index) => (
@@ -109,7 +109,7 @@ export const CurrentActivities: FC<CurrentActivitiesProps> = ({
         {currentBattleFields.length > 0 ? (
           <article>
             <header className="bg-gradient-to-tr from-[#ec6f59] to-[#fad15c] bg-clip-text py-2 text-lg font-extrabold text-transparent">
-              Battlefields:
+              Поля битвы:
             </header>
             <ol className="relative border-l  border-gray-700 p-2">
               {currentBattleFields.map((battlefield, index) => (

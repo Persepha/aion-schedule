@@ -3,22 +3,22 @@ import NavLink from "./UI/NavLink.astro";
 ---
 
 <nav class="flex flex-wrap items-center justify-center gap-2">
-  <NavLink linkTo="/current-activities/" title="Current activities">
+  <NavLink linkTo="/current-activities/" title="Доступные активности">
     <img src={`${import.meta.env.BASE_URL}/images/flame.svg`} alt="rift logo" />
   </NavLink>
 
-  <NavLink linkTo="/" title="Fortress">
+  <NavLink linkTo="/" title="Осады">
     <img
       src={`${import.meta.env.BASE_URL}/images/fortress.png`}
       alt="rift logo"
     />
   </NavLink>
 
-  <NavLink linkTo="/rifts/" title="Rifts">
+  <NavLink linkTo="/rifts/" title="Разломы">
     <img src={`${import.meta.env.BASE_URL}/images/rift.png`} alt="rift logo" />
   </NavLink>
 
-  <NavLink linkTo="/battlefield/" title="Battlefield">
+  <NavLink linkTo="/battlefield/" title="Поля битвы">
     <img
       src={`${import.meta.env.BASE_URL}/images/battlefield_active.png`}
       alt="battlefield logo"

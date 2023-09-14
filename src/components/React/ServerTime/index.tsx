@@ -6,7 +6,7 @@ export const ServerTime = () => {
   const [currentServerDate, setCurrentServerDate] = useState<string>("");
 
   const updateServerTime = () => {
-    const serverTime = moment().utc().add(2, "h");
+    const serverTime = moment().utc().add(3, "h");
     setCurrentServerTime(serverTime.format("h:mm:ss a"));
     setCurrentServerDate(serverTime.format("dddd, MMMM Do YYYY"));
   };
@@ -27,7 +27,7 @@ export const ServerTime = () => {
         <time className="text-3xl">{currentServerTime}</time>
 
         <time className="text-neutral-500">{currentServerDate}</time>
-        <span className="text-neutral-500">{"Server time (UTC +2)"}</span>
+        <span className="text-neutral-500">{"Server time (UTC +3)"}</span>
       </div>
     </section>
   );

@@ -1,66 +1,66 @@
 [
     {
-        "location": "Lower abyss",
-        "name": "Siel's Western Fortress",
-        "day": ["Wednesday", "Sunday"],
+        "location": "Нижняя Бездна",
+        "name": "Западная крепость Сиэли",
+        "day": ["Среда", "Воскресенье"],
         "time_start": "7:00 PM",
         "time_end": "7:30 PM"
     },
     {
-        "location": "Lower abyss",
-        "name": "Siel's Eastern Fortress",
-        "day": ["Wednesday", "Sunday"],
+        "location": "Нижняя Бездна",
+        "name": "Восточная крепость Сиэли",
+        "day": ["Среда", "Воскресенье"],
         "time_start": "7:00 PM",
         "time_end": "7:30 PM"
     },
     {
-        "location": "Lower abyss",
-        "name": "Sulphur Fortress",
-        "day": ["Wednesday", "Sunday"],
+        "location": "Нижняя Бездна",
+        "name": "Крепость серного дерева",
+        "day": ["Среда", "Воскресенье"],
         "time_start": "7:00 PM",
         "time_end": "7:30 PM"
     },
     {
-        "location": "Core abyss",
-        "name": "Divine Fortress",
-        "day": ["Saturday"],
+        "location": "Око Бездны",
+        "name": "Крепость святости",
+        "day": ["Суббота"],
         "time_start": "10:00 PM",
-        "time_end": "22:50 PM"
+        "time_end": "10:50 PM"
     },
     {
-        "location": "Upper abyss",
-        "name": "Asteria Fortress",
-        "day": ["Saturday"],
-        "time_start": "7:00 PM",
-        "time_end": "7:30 PM"
-    },
-    {
-        "location": "Upper abyss",
-        "name": "Roah Fortress",
-        "day": ["Saturday"],
-        "time_start": "7:00 PM",
-        "time_end": "7:30 PM"
-    },
-    {
-        "location": "Upper abyss",
-        "name": "Krotan Fortress",
-        "day": ["Wednesday", "Sunday"],
+        "location": "Верхняя Бездна",
+        "name": "Крепость Астерия",
+        "day": ["Воскресенье"],
         "time_start": "10:00 PM",
         "time_end": "10:30 PM"
+    },
+    {
+        "location": "Верхняя Бездна",
+        "name": "Крепость древнего города Ру",
+        "day": ["Воскресенье"],
+        "time_start": "10:00 PM",
+        "time_end": "10:30 PM"
+    },
+    {
+        "location": "Верхняя Бездна",
+        "name": "Крепость Кротан",
+        "day": ["Среда", "Суббота"],
+        "time_start": "10:00 PM",
+        "time_end": "10:55 PM"
 
     },
     {
-        "location": "Upper abyss",
-        "name": "Kysis Fortress",
-        "day": ["Wednesday", "Sunday"],
+        "location": "Верхняя Бездна",
+        "name": "Крепость Ткисас",
+        "day": ["Среда", "Суббота"],
         "time_start": "10:00 PM",
-        "time_end": "10:30 PM"
+        "time_end": "10:55 PM"
     },
     {
-        "location": "Upper abyss",
-        "name": "Miren Fortress",
-        "day": ["Wednesday", "Sunday"],
+        "location": "Верхняя Бездна",
+        "name": "Крепость Ра-Мирэн",
+        "day": ["Среда", "Суббота"],
         "time_start": "10:00 PM",
-        "time_end": "10:30 PM"
+        "time_end": "10:55 PM"
     }
 ]

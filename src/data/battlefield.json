@@ -1,16 +1,16 @@
 [
     {
-        "name": "Dredgion",
+        "name": "Дерадикон",
         "entry lvl": "46-50",
-        "entries": "1 per day",
+        "entries": "1 в день",
         "entry time": [
             {
                 "time_start": "12:00 PM",
                 "time_end": "2:00 PM"
             },
             {
-                "time_start": "6:00 PM",
-                "time_end": "8:00 PM"
+                "time_start": "8:00 PM",
+                "time_end": "10:00 PM"
             },
             {
                 "time_start": "12:00 AM",
@@ -20,9 +20,9 @@
         
     },
     {
-        "name": "Arena of Chaos",
+        "name": "Арена хаоса",
         "entry lvl": "46+",
-        "entries": "Ticket required",
+        "entries": "Необходим билет",
         "entry time": [
             {
                 "time_start": "2:00 PM",
@@ -32,9 +32,9 @@
         
     },
     {
-        "name": "Arena of Discipline",
+        "name": "Арена доблести",
         "entry lvl": "46+",
-        "entries": "Ticket required",
+        "entries": "Необходим билет",
         "entry time": [
             {
                 "time_start": "2:00 PM",
@@ -44,25 +44,25 @@
         
     },
     {
-        "name": "Chaos Training Grounds",
+        "name": "Тренировочная арена хаоса",
         "entry lvl": "46+",
-        "entries": "No limit",
+        "entries": "Без ограничений",
         "entry time": [
             {
-                "time_start": "Any time",
-                "time_end": "Any time"
+                "time_start": "В любое время",
+                "time_end": "В любое время"
             }
         ]
         
     },
     {
-        "name": "Discipline Training Grounds",
+        "name": "Тренировочная арена доблести",
         "entry lvl": "46+",
-        "entries": "No limit",
+        "entries": "Без ограничений",
         "entry time": [
             {
-                "time_start": "Any time",
-                "time_end": "Any time"
+                "time_start": "В любое время",
+                "time_end": "В любое время"
             }
         ]
         

@@ -30,19 +30,19 @@ export const BattlefieldSchedule: FC<BattlefieldScheduleProps> = ({
           <thead className="bg-black/90 text-sm dark:text-gray-400">
             <tr>
               <th scope="col" className="px-6 py-3">
-                Name
+                Поле боя
               </th>
               <th scope="col" className="px-6 py-3">
-                Entry level
+                Ур. входа
               </th>
               <th scope="col" className="px-6 py-3">
-                Entries
+                Кол-во входов
               </th>
               <th scope="col" className="px-6 py-3">
-                Entry time
+                Время входа
               </th>
               <th scope="col" className="px-6 py-3">
-                Status
+                Статус
               </th>
             </tr>
           </thead>
